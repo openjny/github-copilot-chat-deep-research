@@ -15,7 +15,7 @@ This repository provides custom agent definitions and prompts for GitHub Copilot
 
 ## Use Cases
 
-- Researching Azure service comparisons and architecture decisions
+- Researching service comparisons and architecture decisions
 - Investigating Microsoft 365 features and integration options
 - Exploring .NET, Visual Studio, and developer tools documentation
 - Compiling reference materials for Microsoft certifications
@@ -23,8 +23,8 @@ This repository provides custom agent definitions and prompts for GitHub Copilot
 
 ## Requirements
 
-- GitHub Copilot Chat
 - VS Code with Copilot extension
+- GitHub Copilot Subscription
 - [Web Search for Copilot](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-websearchforcopilot) extension (optional, for web search capabilities)
 
 ## Usage

@@ -32,9 +32,9 @@ A new feature was announced[^1]. However, it has also been noted that...[^2].
 [^2]: Title 2, https://....
 ```
 
-## Azure Knowledge
+## Microsoft Knowledge
 
-Azure updates are constantly in progress, and your Azure knowledge is outdated. Do not use any information whose documentation source is unclear.
+Microsoft updates are constantly in progress, and your Microsoft knowledge is outdated. Do not use any information whose documentation source is unclear.
 
 ## Downloads
 
