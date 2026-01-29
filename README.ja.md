@@ -12,6 +12,7 @@
 - **Microsoft Learn MCP 統合**: 公式 [Microsoft Learn MCP Server](https://learn.microsoft.com/ja-jp/training/support/mcp) からの直接検索と取得
 - **Web 検索サポート**: より広いコンテキストのための Web 検索による拡張リサーチ機能
 - **自動レビュー**: レポート内のギャップや弱いエビデンスを特定する組み込みレビューエージェント
+- **Azure のための Agent Skill**: Azure 価格情報（[Retail Prices API](https://learn.microsoft.com/ja-jp/rest/api/cost-management/retail-prices/azure-retail-prices)）とサービス更新情報（[Release Communications API](https://azure.microsoft.com/ja-jp/updates/)）を取得する組み込みスキル
 
 > 💡 これらのエージェントを使用して生成されたリサーチレポートの例として [2026-01-29-aca-vs-aks-comparison.md](research/2026-01-29-aca-vs-aks-comparison.md) をご覧ください。
 

@@ -14,6 +14,7 @@ This repository provides a multi-agent system of GitHub Copilot custom agents th
 - **Microsoft Learn MCP Integration**: Direct search and retrieval from official [Microsoft Learn MCP Server](https://learn.microsoft.com/en-us/training/support/mcp)
 - **Web Search Support**: Extended research capabilities through web search for broader context
 - **Automated Review**: Built-in review agent to identify gaps and weak evidence in reports
+- **Agent Skills for Azure**: [Built-in skills](./.github/skills) for retrieving Azure pricing ([Retail Prices API](https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices)) and service updates ([Release Communications API](https://azure.microsoft.com/en-us/updates/))
 
 > 💡 See [2026-01-29-aca-vs-aks-comparison.md](research/2026-01-29-aca-vs-aks-comparison.md) for an example research report generated using these agents.
 
