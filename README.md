@@ -75,6 +75,29 @@ sequenceDiagram
 - GitHub Copilot Subscription
 - [Web Search for Copilot](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-websearchforcopilot) extension (optional, for web search capabilities)
 
+## How to get started
+
+### Option 1: Local Setup
+
+1. Clone this repository (or forked repository on your account) and open it in VS Code:
+
+   ```bash
+   git clone https://github.com/openjny/github-copilot-chat-deep-research.git
+   cd github-copilot-chat-deep-research
+   code .
+   ```
+
+2. Install the GitHub Copilot extension and sign in.
+3. (Optional) Install the Web Search for Copilot extension for web search capabilities. This may require additional configuration such as [Tavily API key](https://www.tavily.com/).
+
+### Option 2: GitHub Codespaces
+
+1. Fork this repository to your GitHub account.
+2. Click the "Code" button and select "Open with Codespaces" > "Create codespace on main".
+3. Follow the same steps as the local setup to install the required extensions in the Codespace environment.
+
+See [official documentation](https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces) for more details on GitHub Codespaces.
+
 ## Usage
 
 ### Quick Ask
