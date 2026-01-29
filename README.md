@@ -81,24 +81,36 @@ sequenceDiagram
 
 ### Option 1: Local Setup
 
-1. Clone this repository (or forked repository on your account) and open it in VS Code:
+1. Create your own repository from this template:
+   - Click the **Use this template** button at the top of the repository page
+   - Select **Create a new repository**
+   - Choose your account/organization and repository name
+2. Clone your new repository and open it in VS Code:
 
    ```bash
-   git clone https://github.com/openjny/github-copilot-chat-deep-research.git
-   cd github-copilot-chat-deep-research
+   git clone https://github.com/<your-account>/<your-repo>.git
+   cd <your-repo>
    code .
    ```
 
-2. Install the GitHub Copilot extension and sign in.
-3. (Optional) Install the Web Search for Copilot extension for web search capabilities. This may require additional configuration such as [Tavily API key](https://www.tavily.com/).
+3. Install the GitHub Copilot extension and sign in.
+4. (Optional) Install the Web Search for Copilot extension for web search capabilities. This may require additional configuration such as [Tavily API key](https://www.tavily.com/).
 
 ### Option 2: GitHub Codespaces
 
-1. Fork this repository to your GitHub account.
-2. Click the "Code" button and select "Open with Codespaces" > "Create codespace on main".
+1. Create your own repository from this template (click **Use this template** > **Create a new repository**).
+2. In your new repository, click the **Code** button and select **Open with Codespaces** > **Create codespace on main**.
 3. Follow the same steps as the local setup to install the required extensions in the Codespace environment.
 
-See [official documentation](https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces) for more details on GitHub Codespaces.
+See [official documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for more details on creating repositories from templates.
+
+### Option 3: GitHub Copilot Coding Agent
+
+You can also use this repository with [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) for autonomous research workflows.
+
+![](./docs/assets/coding-agent-mode.png)
+
+See [Setup for Coding Agent](docs/setup-for-coding-agent.md) for detailed instructions.
 
 ## Usage
 

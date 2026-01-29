@@ -79,24 +79,36 @@ sequenceDiagram
 
 ### オプション 1: ローカルセットアップ
 
-1. このリポジトリ（またはあなたのアカウントにフォークしたリポジトリ）をクローンし、VS Code で開きます：
+1. このテンプレートから自分のリポジトリを作成します：
+   - リポジトリページ上部の **Use this template** ボタンをクリック
+   - **Create a new repository** を選択
+   - アカウント/組織とリポジトリ名を選択
+2. 作成したリポジトリをクローンし、VS Code で開きます：
 
    ```bash
-   git clone https://github.com/openjny/github-copilot-chat-deep-research.git
-   cd github-copilot-chat-deep-research
+   git clone https://github.com/<your-account>/<your-repo>.git
+   cd <your-repo>
    code .
    ```
 
-2. GitHub Copilot 拡張機能をインストールし、サインインします。
-3. （オプション）Web 検索機能のために Web Search for Copilot 拡張機能をインストールします。[Tavily API キー](https://www.tavily.com/) などの追加設定が必要な場合があります。
+3. GitHub Copilot 拡張機能をインストールし、サインインします。
+4. （オプション）Web 検索機能のために Web Search for Copilot 拡張機能をインストールします。[Tavily API キー](https://www.tavily.com/) などの追加設定が必要な場合があります。
 
 ### オプション 2: GitHub Codespaces
 
-1. このリポジトリをあなたの GitHub アカウントにフォークします。
-2. 「Code」ボタンをクリックし、「Open with Codespaces」>「Create codespace on main」を選択します。
+1. このテンプレートから自分のリポジトリを作成します（**Use this template** > **Create a new repository** をクリック）。
+2. 作成したリポジトリで **Code** ボタンをクリックし、**Open with Codespaces** > **Create codespace on main** を選択します。
 3. Codespace 環境でローカルセットアップと同じ手順で必要な拡張機能をインストールします。
 
-GitHub Codespaces の詳細については [公式ドキュメント](https://docs.github.com/ja/codespaces/about-codespaces/what-are-codespaces) をご覧ください。
+テンプレートからのリポジトリ作成の詳細については [公式ドキュメント](https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) をご覧ください。
+
+### オプション 3: GitHub Copilot Coding Agent
+
+[GitHub Copilot Coding Agent](https://docs.github.com/ja/copilot/concepts/agents/coding-agent/about-coding-agent) を使用して、自律的なリサーチワークフローを実行することもできます。
+
+![](./docs/assets/coding-agent-mode.png)
+
+詳細な手順については [Coding Agent セットアップガイド](docs/setup-for-coding-agent.md) をご覧ください。
 
 ## 使い方
 

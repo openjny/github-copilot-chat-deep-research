@@ -1,11 +1,21 @@
 # General Guidelines
 
-This repository is designed for creating thorough research reports using trusted sources. It contains agent definitions for research and research reports.
+This repository provides GitHub Copilot custom agents for answering user queries and generating research reports using trusted sources.
+
+## Agents
+
+| Agent                  | Description                                                                                                                         |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `mshelp.ask`           | Quick search agent for Microsoft Learn Docs and Web sources. Used for simple queries and understanding user intent.                 |
+| `mshelp.research`      | Main orchestrator for research using Microsoft Learn MCP and Web search. Coordinates subagents and generates comprehensive reports. |
+| `mshelp.websearch`     | Main orchestrator for web-focused research. Similar to `mshelp.research` but relies primarily on web search.                        |
+| `mshelp.sub.research`  | Subagent for researching specific perspectives using Microsoft Learn Docs and Web search.                                           |
+| `mshelp.sub.websearch` | Subagent for researching specific perspectives using Web search only.                                                               |
+| `mshelp.sub.review`    | Subagent for analyzing reports and identifying missing or incomplete information.                                                   |
 
 ## Directory Structure
 
 ```
-root/
 ├── downloads/
 │   ├── download-file.pdf
 │   └── download-file.meta.json
@@ -19,6 +29,7 @@ root/
 - File names must follow the format `YYYY-MM-DD-<slug>.md`.
 - Do not include inferences or opinions in research content. Provide facts only.
 - Research results are primarily intended for use as data, not for human reading. Avoid excessive decoration or verbose explanations.
+- Note that, when `ask` agent mode is used, no report file will be created. Only `research` and `websearch` agent modes generate report files.
 
 ## Citation Requirements
 
