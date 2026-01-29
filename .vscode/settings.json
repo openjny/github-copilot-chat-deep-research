@@ -1,0 +1,7 @@
+{
+    "chat.promptFilesRecommendations": {
+        "mshelp.websearch": true,
+        "mshelp.research": true,
+        "mshelp.ask": true
+    }
+}

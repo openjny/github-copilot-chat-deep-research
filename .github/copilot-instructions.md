@@ -1,0 +1,50 @@
+# General Guidelines
+
+This repository is designed for creating thorough research reports using trusted sources. It contains agent definitions for research and research reports.
+
+## Directory Structure
+
+```
+root/
+├── downloads/
+│   ├── download-file.pdf
+│   └── download-file.meta.json
+├── research/
+│   └── YYYY-MM-DD-slug.md
+└── AGENTS.md
+```
+
+## Research Report File Conventions
+
+- File names must follow the format `YYYY-MM-DD-<slug>.md`.
+- Do not include inferences or opinions in research content. Provide facts only.
+- Research results are primarily intended for use as data, not for human reading. Avoid excessive decoration or verbose explanations.
+
+## Citation Requirements
+
+Credibility is important, so cite sources using footnotes when referencing data. Compile the footnote list at the end of the report and always include URLs (specify URLs explicitly, not in markdown format).
+
+```md
+A new feature was announced[^1]. However, it has also been noted that...[^2].
+
+[^1]: Title 1, https://....
+
+[^2]: Title 2, https://....
+```
+
+## Azure Knowledge
+
+Azure updates are constantly in progress, and your Azure knowledge is outdated. Do not use any information whose documentation source is unclear.
+
+## Downloads
+
+- For files like PDFs that are more efficient to download locally before reading, save them to the `downloads/` folder.
+- Always create a metadata file (`.meta.json`) for downloaded files. The metadata file should include the following information:
+
+  ```json
+  {
+    "url": "https://...", // Source URL
+    "downloaded_at": "YYYY-MM-DDTHH:MM:SSZ", // Download timestamp (ISO 8601 format)
+    "type": "pdf" // File type (e.g., pdf, docx, etc.)
+  }
+  ```
