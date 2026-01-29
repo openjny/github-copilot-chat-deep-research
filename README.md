@@ -9,12 +9,9 @@ This repository provides custom agent definitions and prompts for GitHub Copilot
 ## Features
 
 - **Multi-Agent Research Workflow**: Orchestrated agents that handle different aspects of the research process
-- **Microsoft Learn Integration**: Direct search and retrieval from official Microsoft Learn documentation
-- **Azure Documentation Support**: Specialized for Azure services, features, and best practices research
+- **Microsoft Learn MCP Integration**: Direct search and retrieval from official [Microsoft Learn MCP Server](https://learn.microsoft.com/en-us/training/support/mcp)
 - **Web Search Support**: Extended research capabilities through web search for broader context
 - **Automated Review**: Built-in review agent to identify gaps and weak evidence in reports
-- **Critical Thinking Analysis**: Prompt for analyzing responses with a skeptical, detail-oriented approach
-- **Fact-Checking**: Agent for adding evidence footnotes with links to official Microsoft documentation
 
 ## Use Cases
 
@@ -28,7 +25,6 @@ This repository provides custom agent definitions and prompts for GitHub Copilot
 
 - GitHub Copilot Chat
 - VS Code with Copilot extension
-- [Microsoft Docs MCP server](https://github.com/nicobailey/microsoft-docs-mcp) (recommended, for enhanced MS Learn integration)
 - [Web Search for Copilot](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-websearchforcopilot) extension (optional, for web search capabilities)
 
 ## Usage
@@ -55,7 +51,7 @@ Or use `/mshelp.websearch` for web-focused research:
 /mshelp.websearch Latest trends in serverless computing on Azure
 ```
 
-### Critical Thinking
+### Follow-up
 
 After receiving a response, use the critical thinking prompt to analyze it:
 
@@ -63,9 +59,7 @@ After receiving a response, use the critical thinking prompt to analyze it:
 /criticalthink
 ```
 
-### Fact Checking
-
-Add evidence footnotes to existing research reports:
+Factcheck and add evidence footnotes to existing research reports:
 
 ```
 /factcheck
