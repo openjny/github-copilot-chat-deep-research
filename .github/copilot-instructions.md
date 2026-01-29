@@ -47,6 +47,9 @@ A new feature was announced[^1]. However, it has also been noted that...[^2].
 
 Microsoft updates are constantly in progress, and your Microsoft knowledge is outdated. Do not use any information whose documentation source is unclear.
 
+- Read `.github/skills/azure-price/SKILL.md` when looking up Azure pricing information.
+- Read `.github/skills/azure-updates/SKILL.md` when looking up Azure service updates / retirements.
+
 ## Downloads
 
 - For files like PDFs that are more efficient to download locally before reading, save them to the `downloads/` folder.
