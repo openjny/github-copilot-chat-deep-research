@@ -4,7 +4,51 @@ A collection of GitHub Copilot custom agents and prompts designed for conducting
 
 ## Overview
 
-This repository provides custom agent definitions and prompts for GitHub Copilot Chat that enable deep research capabilities focused on Microsoft ecosystem. The agents are optimized to search Microsoft Learn documentation, Azure docs, and web sources, compile findings into structured research reports, and ensure credibility through proper citation.
+This repository provides a multi-agent system of GitHub Copilot custom agents that enables deep research capabilities focused on Microsoft ecosystem. The agents are optimized to search Microsoft Learn documentation, Azure docs, and web sources, compile findings into structured research reports, and ensure credibility through proper citation.
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Main as mshelp.research
+    participant Ask as mshelp.ask
+    participant Research as mshelp.sub.research
+    participant Review as mshelp.sub.review
+    participant MSDocs as Microsoft Docs MCP
+    participant Web as Web Search
+    participant FS as File System
+
+    User->>Main: Request research topic
+    Main->>Ask: Understand user intent
+    Ask->>MSDocs: Search documentation
+    Ask->>Web: Search web
+    Ask-->>Main: Return topic summary
+    Main->>User: Propose 3 research perspectives
+    User-->>Main: Confirm/Adjust perspectives
+    Main->>FS: Check research/ for overlap
+    Main->>FS: Create report file
+
+    loop For each perspective
+        Main->>Research: Research perspective
+        Research->>FS: Read report
+        Research->>MSDocs: Search docs
+        Research->>Web: Search web
+        Research->>FS: Update report with findings
+        Research-->>Main: Complete
+    end
+
+    Main->>FS: Write conclusions
+
+    loop Review cycle
+        Main->>Review: Review report
+        Review->>FS: Read report
+        Review-->>Main: Return issues
+        alt Issues exist
+            Main->>FS: Make corrections
+        end
+    end
+
+    Main->>User: Final report summary
+```
 
 ## Features
 
@@ -29,7 +73,7 @@ This repository provides custom agent definitions and prompts for GitHub Copilot
 
 ## Usage
 
-### Quick Search
+### Quick Ask
 
 Use `/mshelp.ask` to quickly search Microsoft Learn documentation and web sources:
 
