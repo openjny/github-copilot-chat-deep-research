@@ -2,6 +2,8 @@
 
 A collection of GitHub Copilot custom agents and prompts designed for conducting thorough research on Microsoft technologies using official documentation and trusted sources.
 
+> 💡 [日本語版 README はこちら](README.ja.md)
+
 ## Overview
 
 This repository provides a multi-agent system of GitHub Copilot custom agents that enables deep research capabilities focused on Microsoft ecosystem. The agents are optimized to search Microsoft Learn documentation, Azure docs, and web sources, compile findings into structured research reports, and ensure credibility through proper citation.
