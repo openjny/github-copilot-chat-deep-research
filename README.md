@@ -6,14 +6,14 @@ A collection of GitHub Copilot custom agents and prompts designed for conducting
 
 This repository provides a multi-agent system of GitHub Copilot custom agents that enables deep research capabilities focused on Microsoft ecosystem. The agents are optimized to search Microsoft Learn documentation, Azure docs, and web sources, compile findings into structured research reports, and ensure credibility through proper citation.
 
-See [2026-01-29-aca-vs-aks-comparison.md](research/2026-01-29-aca-vs-aks-comparison.md) for an example research report generated using these agents.
-
-## Features
+**Features**
 
 - **Multi-Agent Research Workflow**: Orchestrated agents that handle different aspects of the research process
 - **Microsoft Learn MCP Integration**: Direct search and retrieval from official [Microsoft Learn MCP Server](https://learn.microsoft.com/en-us/training/support/mcp)
 - **Web Search Support**: Extended research capabilities through web search for broader context
 - **Automated Review**: Built-in review agent to identify gaps and weak evidence in reports
+
+> 💡 See [2026-01-29-aca-vs-aks-comparison.md](research/2026-01-29-aca-vs-aks-comparison.md) for an example research report generated using these agents.
 
 ## Workflow
 
